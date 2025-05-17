@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "title": "RuiQi WAF Enterprise Web Application Firewall Brochure",
+    "description": "Protect your web applications with next-generation WAF technology powered by HAProxy and Coraza"
+  },
+  "printButton": "Print Brochure",
+  "cover": {
+    "mainTitle": "Enterprise Web Application Firewall",
+    "tagline": "Next-Gen WAF Technology · Comprehensive Protection · High Performance Design",
+    "badge": "OWASP Top 10 Protection"
+  },
+  "overview": {
+    "sectionTitle": "Product Overview",
+    "leadText": "RuiQi WAF integrates HAProxy with OWASP Coraza WAF technology to provide comprehensive security protection for enterprise web applications.",
+    "featureBanner": {
+      "security": "Comprehensive Security",
+      "performance": "High Performance",
+      "cloud": "Cloud Native",
+      "llm": "LLM Compliance Detection"
+    },
+    "designPhilosophy": {
+      "title": "Design Philosophy",
+      "defense": {
+        "title": "Defense in Depth",
+        "desc": "Five-stage security detection builds a multi-layered defense system"
+      },
+      "performance": {
+        "title": "High Performance",
+        "desc": "Latency < 5ms, processing 10,000+ requests per second"
+      },
+      "detection": {
+        "title": "Precise Detection",
+        "desc": "Multi-engine detection with < 0.1% false positive rate"
+      },
+      "api": {
+        "title": "API Security",
+        "desc": "Specialized protection for REST/GraphQL/SOAP APIs"
+      }
+    }
+  },
+  "multiEngine": {
+    "sectionTitle": "Multi-Engine Fusion Architecture",
+    "leadText": "RuiQi WAF employs an innovative multi-engine fusion architecture, combining high-performance proxy capabilities with deep security inspection to achieve the optimal balance between performance and security.",
+    "engines": {
+      "haProxy": {
+        "title": "HAProxy Frontend Layer",
+        "desc": "High-performance HTTP/HTTPS proxy with TLS 1.3 support and intelligent traffic distribution"
+      },
+      "corazaWaf": {
+        "title": "Coraza WAF Engine",
+        "desc": "Next-generation WAF engine compatible with ModSecurity, supporting OWASP CRS rule set"
+      },
+      "microEngine": {
+        "title": "MicroEngine",
+        "desc": "Rule-based IP filtering, URL inspection, and complex conditional logic engine"
+      },
+      "geoAnalysis": {
+        "title": "Geo-Analysis Engine",
+        "desc": "Location-based traffic filtering system that identifies geographic attack patterns"
+      },
+      "rateLimit": {
+        "title": "Rate Limiting Engine",
+        "desc": "Traffic control and request limiting mechanisms to prevent resource exhaustion"
+      },
+      "spoe": {
+        "title": "SPOE Communication",
+        "desc": "Efficient communication protocol optimizing detection process performance, ensuring separation of security detection and traffic handling"
+      }
+    }
+  },
+  "protection": {
+    "sectionTitle": "Comprehensive Protection Features",
+    "features": {
+      "owaspTop10": {
+        "title": "OWASP Top 10 Protection",
+        "desc": "Complete defense against injection attacks, XSS, CSRF, and other critical web vulnerabilities",
+        "tag": "Core Protection"
+      },
+      "botProtection": {
+        "title": "Bot Protection",
+        "desc": "Intelligently distinguishes between benign crawlers and malicious bots, preventing data scraping and automated attacks",
+        "tag": "Advanced Feature"
+      },
+      "apiSecurity": {
+        "title": "API Security",
+        "desc": "Professional protection for REST/GraphQL APIs, including schema validation and anomaly detection"
+      },
+      "virtualPatching": {
+        "title": "Virtual Patching",
+        "desc": "Immediate defense against zero-day vulnerabilities without modifying application code"
+      }
+    },
+    "advancedProtection": {
+      "title": "Advanced Threat Protection",
+      "webShell": {
+        "title": "Web Shell Detection",
+        "desc": "Precise identification of various Web Shell upload and execution behaviors"
+      },
+      "dnsTunnel": {
+        "title": "DNS Tunnel Attack Defense",
+        "desc": "Detection and blocking of data infiltration attempts via DNS protocol"
+      },
+      "ddos": {
+        "title": "Application Layer DDoS Mitigation",
+        "desc": "Intelligent limiting of abnormal request rates to protect application resources"
+      },
+      "ipReputation": {
+        "title": "Global IP Reputation System",
+        "desc": "Automatic blocking of known malicious sources, preemptively stopping attacks"
+      }
+    }
+  },
+  "llmCompliance": {
+    "sectionTitle": "LLM Compliance Detection",
+    "leadText": "With the widespread adoption of Large Language Models (LLMs) in enterprises, RuiQi WAF provides specialized API security protection and compliance detection capabilities to ensure LLM applications remain secure and controlled.",
+    "features": {
+      "promptInjection": {
+        "title": "Prompt Injection Protection",
+        "desc": "Detects and blocks malicious prompt injection attacks, preventing models from being manipulated to perform unintended actions"
+      },
+      "sensitiveInfo": {
+        "title": "Sensitive Information Filtering",
+        "desc": "Identifies and filters sensitive data in prompts and responses to prevent privacy information leakage"
+      },
+      "compliance": {
+        "title": "Compliance Auditing",
+        "desc": "Records and audits all model interactions, supporting compliance requirements and retrospective analysis"
+      },
+      "outputCheck": {
+        "title": "Output Security Check",
+        "desc": "Analyzes model response content, filtering harmful, violating, or inappropriate information"
+      }
+    },
+    "workflow": {
+      "title": "LLM API Protection Process",
+      "step1": {
+        "title": "Pre-Request Inspection",
+        "desc": "Analyzes user prompts, detecting injection attacks and sensitive information"
+      },
+      "step2": {
+        "title": "Request Compliance Conversion",
+        "desc": "Transforms non-compliant prompts or rejects processing"
+      },
+      "step3": {
+        "title": "Response Content Analysis",
+        "desc": "Checks if model output contains harmful or violating content"
+      },
+      "step4": {
+        "title": "Response Security Processing",
+        "desc": "Filters or masks non-compliant content to ensure safe output"
+      },
+      "step5": {
+        "title": "Complete Audit Logging",
+        "desc": "Records the entire interaction process, supporting compliance auditing and analysis"
+      }
+    }
+  },
+  "processingModel": {
+    "sectionTitle": "Five-Stage Processing Model",
+    "leadText": "RuiQi WAF is based on Coraza's five-stage processing model, implementing precise security detection at each critical point in the HTTP request/response lifecycle.",
+    "steps": {
+      "step1": {
+        "title": "Request Header Processing",
+        "desc": "Analyzes HTTP connection metadata, URI, GET parameters, and request headers to intercept malicious requests"
+      },
+      "step2": {
+        "title": "Request Body Processing",
+        "desc": "Deep inspection of POST parameters, multipart form data, JSON/XML content, and raw request body"
+      },
+      "step3": {
+        "title": "Response Header Processing",
+        "desc": "Validates response status codes and response headers to prevent information leakage"
+      },
+      "step4": {
+        "title": "Response Body Processing",
+        "desc": "Analyzes raw response body content to prevent sensitive data exposure"
+      },
+      "step5": {
+        "title": "Logging Stage",
+        "desc": "Evaluates final rules, saves persistent collections, and records complete security event audits"
+      }
+    },
+    "deployment": {
+      "title": "Flexible Deployment Options",
+      "edge": {
+        "title": "Edge Deployment",
+        "desc": "First line of defense at network edge, intercepting external attacks"
+      },
+      "appFront": {
+        "title": "Application Front-end",
+        "desc": "Direct protection of application servers with precise security controls"
+      },
+      "layered": {
+        "title": "Layered Protection",
+        "desc": "Edge + front-end dual protection, implementing defense in depth"
+      },
+      "serviceMesh": {
+        "title": "Service Mesh",
+        "desc": "Seamless integration with Istio/Linkerd, protecting microservice communications"
+      }
+    }
+  },
+  "specifications": {
+    "sectionTitle": "Product Specifications",
+    "performance": {
+      "title": "Performance Metrics",
+      "latency": "Latency Impact: Less than 5ms/request",
+      "requests": "Request Processing: 10,000+ HTTP requests/second",
+      "connections": "Concurrent Connections: 100,000+ per node",
+      "failover": "Failover: Automatic switching in <10 seconds"
+    },
+    "protocols": {
+      "title": "Supported Protocols",
+      "http": "HTTP/1.x, HTTP/2, HTTP/3",
+      "websocket": "WebSocket",
+      "https": "HTTPS(SNI)",
+      "api": "REST/GraphQL/SOAP API"
+    },
+    "deployment": {
+      "title": "Deployment Options",
+      "container": "Containerization: Docker, Kubernetes",
+      "virtualization": "Virtualization: VMware, KVM, Hyper-V",
+      "os": "Operating Systems: CentOS/RHEL 7+, Ubuntu 18.04+",
+      "cloud": "Cloud Platforms: AWS, Azure, Alibaba Cloud, Tencent Cloud, etc."
+    },
+    "securityFeatures": {
+      "title": "Security Features",
+      "owasp": "OWASP Top 10 Protection",
+      "bot": "Bot Behavior Analysis",
+      "api": "API Security Validation",
+      "patching": "Virtual Patching"
+    }
+  },
+  "environment": {
+    "sectionTitle": "Environment Support",
+    "leadText": "RuiQi WAF provides extensive environment compatibility, supporting multiple operating systems, cloud platforms, container environments, and communication protocols to ensure seamless deployment across various IT infrastructures.",
+    "os": {
+      "title": "Operating Systems",
+      "items": [
+        "CentOS/RHEL 7+",
+        "Ubuntu 18.04+",
+        "Debian 10+",
+        "Windows Server 2016+",
+        "Kylinos"
+      ]
+    },
+    "cloud": {
+      "title": "Cloud Platforms",
+      "items": [
+        "AWS, Azure, GCP",
+        "Alibaba Cloud, Tencent Cloud",
+        "Huawei Cloud, Baidu Cloud",
+        "Sealos Cloud, JD Cloud"
+      ]
+    },
+    "container": {
+      "title": "Container Support",
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "OpenShift",
+        "Rancher"
+      ]
+    },
+    "protocols": {
+      "title": "Supported Protocols",
+      "items": [
+        "HTTP/1.x, HTTP/2, HTTP/3",
+        "WebSocket",
+        "HTTPS(SNI)",
+        "gRPC"
+      ]
+    }
+  },
+  "scenarios": {
+    "sectionTitle": "Industry Application Scenarios",
+    "finance": {
+      "title": "Financial Industry",
+      "items": [
+        "Online and Mobile Banking Protection",
+        "Financial Transaction System Protection",
+        "Open Banking API Security"
+      ]
+    },
+    "government": {
+      "title": "Government and Public Services",
+      "items": [
+        "Government Portal Security",
+        "Public Service Platform Protection",
+        "Compliance Assurance"
+      ]
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "items": [
+        "Transaction System Security",
+        "Account Security Protection",
+        "High-traffic Event Security"
+      ]
+    },
+    "healthcare": {
+      "title": "Healthcare",
+      "items": [
+        "Patient Portal Security",
+        "Medical Information System Protection",
+        "Telemedicine Platform Protection"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "website": "Official Website: ",
+    "websiteValue": "github.com/HUAHUAI23/RuiQi",
+    "phone": "Consulting Hotline: ",
+    "phoneValue": "18679200828",
+    "support": "Technical Support: ",
+    "supportValue": "github.com/HUAHUAI23/RuiQi/issues"
+  }
+} 
