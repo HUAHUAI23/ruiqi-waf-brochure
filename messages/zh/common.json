@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "title": "RuiQi WAF 企业级Web应用防火墙宣传手册",
+    "description": "利用HAProxy和Coraza提供的新一代WAF技术保护您的Web应用"
+  },
+  "printButton": "打印宣传手册",
+  "cover": {
+    "mainTitle": "企业级Web应用防火墙",
+    "tagline": "新一代WAF技术 · 全面安全防护 · 高性能设计",
+    "badge": "OWASP Top 10 防护"
+  },
+  "overview": {
+    "sectionTitle": "产品概述",
+    "leadText": "RuiQi WAF 融合 HAProxy 与 OWASP Coraza WAF 技术，为企业 Web 应用提供全方位安全防护。",
+    "featureBanner": {
+      "security": "全面安全防护",
+      "performance": "高性能低延迟",
+      "cloud": "云原生架构",
+      "llm": "大模型合规检测"
+    },
+    "designPhilosophy": {
+      "title": "设计理念",
+      "defense": {
+        "title": "纵深防御",
+        "desc": "五阶段安全检测，构建立体防御体系"
+      },
+      "performance": {
+        "title": "高性能",
+        "desc": "延迟 < 5ms，每秒处理10,000+请求"
+      },
+      "detection": {
+        "title": "精准检测",
+        "desc": "多引擎检测，误报率 < 0.1%"
+      },
+      "api": {
+        "title": "API安全",
+        "desc": "专业保护REST/GraphQL/SOAP API"
+      }
+    }
+  },
+  "multiEngine": {
+    "sectionTitle": "多引擎融合架构",
+    "leadText": "RuiQi WAF 采用创新的多引擎融合架构，结合高性能代理能力与深度安全检查，实现最佳性能与安全性平衡。",
+    "engines": {
+      "haProxy": {
+        "title": "HAProxy前端层",
+        "desc": "高性能HTTP/HTTPS代理，支持TLS 1.3，提供智能流量分发"
+      },
+      "corazaWaf": {
+        "title": "Coraza WAF引擎",
+        "desc": "兼容ModSecurity的新一代WAF引擎，支持OWASP CRS规则集"
+      },
+      "microEngine": {
+        "title": "MicroEngine",
+        "desc": "基于规则的IP过滤、URL检查和复杂条件逻辑引擎"
+      },
+      "geoAnalysis": {
+        "title": "地理分析引擎",
+        "desc": "基于位置的流量过滤系统，识别地域攻击模式"
+      },
+      "rateLimit": {
+        "title": "速率限制引擎",
+        "desc": "流量控制和请求限流机制，防止资源耗尽"
+      },
+      "spoe": {
+        "title": "SPOE通信机制",
+        "desc": "高效通信协议，优化检测流程性能，确保安全检测与流量处理分离"
+      }
+    }
+  },
+  "protection": {
+    "sectionTitle": "全面保护功能",
+    "features": {
+      "owaspTop10": {
+        "title": "OWASP Top 10 防护",
+        "desc": "全面防御注入攻击、XSS、CSRF等关键Web漏洞，确保应用安全",
+        "tag": "核心防护"
+      },
+      "botProtection": {
+        "title": "机器人防护",
+        "desc": "智能区分善意爬虫与恶意机器人，防止数据抓取和自动化攻击",
+        "tag": "高级功能"
+      },
+      "apiSecurity": {
+        "title": "API安全",
+        "desc": "专业保护REST/GraphQL API，包括架构验证和异常检测"
+      },
+      "virtualPatching": {
+        "title": "虚拟补丁",
+        "desc": "无需修改应用代码，立即防御零日漏洞"
+      }
+    },
+    "advancedProtection": {
+      "title": "高级威胁防御",
+      "webShell": {
+        "title": "Web Shell检测",
+        "desc": "精准识别各类Web Shell上传与执行行为"
+      },
+      "dnsTunnel": {
+        "title": "DNS隧道攻击防御",
+        "desc": "检测并阻断通过DNS协议的数据渗透尝试"
+      },
+      "ddos": {
+        "title": "应用层DDoS缓解",
+        "desc": "智能限制异常请求速率，保护应用资源"
+      },
+      "ipReputation": {
+        "title": "全球IP信誉系统",
+        "desc": "自动拦截已知恶意来源，提前阻断攻击"
+      }
+    }
+  },
+  "llmCompliance": {
+    "sectionTitle": "大模型合规检测",
+    "leadText": "随着大语言模型(LLM)在企业中的广泛应用，RuiQi WAF提供专业的API安全防护和合规检测能力，确保大模型应用安全可控。",
+    "features": {
+      "promptInjection": {
+        "title": "提示词注入防护",
+        "desc": "检测并阻断恶意提示词注入攻击，防止模型被操纵执行非预期行为"
+      },
+      "sensitiveInfo": {
+        "title": "敏感信息过滤",
+        "desc": "识别并过滤提示词和响应中的敏感数据，防止隐私信息泄露"
+      },
+      "compliance": {
+        "title": "合规性审计",
+        "desc": "记录并审计所有模型交互，支持合规性要求和事后追溯分析"
+      },
+      "outputCheck": {
+        "title": "输出安全检查",
+        "desc": "分析模型响应内容，过滤有害、违规或不当信息"
+      }
+    },
+    "workflow": {
+      "title": "大模型API防护流程",
+      "step1": {
+        "title": "请求前检查",
+        "desc": "分析用户提示词，检测注入攻击和敏感信息"
+      },
+      "step2": {
+        "title": "请求合规转换",
+        "desc": "对不合规提示词进行安全转换或拒绝处理"
+      },
+      "step3": {
+        "title": "响应内容分析",
+        "desc": "检查模型输出是否包含有害或违规内容"
+      },
+      "step4": {
+        "title": "响应安全处理",
+        "desc": "过滤或屏蔽不合规内容，确保输出安全"
+      },
+      "step5": {
+        "title": "全程审计记录",
+        "desc": "记录交互全过程，支持合规审计和分析"
+      }
+    }
+  },
+  "processingModel": {
+    "sectionTitle": "五阶段处理模型",
+    "leadText": "RuiQi WAF 基于 Coraza 的五阶段处理模型，在 HTTP 请求/响应生命周期的每个关键节点实施精准安全检测。",
+    "steps": {
+      "step1": {
+        "title": "请求头处理",
+        "desc": "分析HTTP连接元数据、URI、GET参数及请求头信息，拦截恶意请求"
+      },
+      "step2": {
+        "title": "请求体处理",
+        "desc": "深度检测POST参数、多部分表单数据、JSON/XML内容及原始请求体"
+      },
+      "step3": {
+        "title": "响应头处理",
+        "desc": "验证响应状态码和响应头信息，防止信息泄露"
+      },
+      "step4": {
+        "title": "响应体处理",
+        "desc": "分析原始响应体内容，阻止敏感数据外泄"
+      },
+      "step5": {
+        "title": "日志记录阶段",
+        "desc": "评估最终规则、保存持久性集合并记录完整安全事件审计"
+      }
+    },
+    "deployment": {
+      "title": "灵活部署方案",
+      "edge": {
+        "title": "边缘部署",
+        "desc": "网络边缘第一道防线，拦截外部攻击"
+      },
+      "appFront": {
+        "title": "应用前置",
+        "desc": "直接保护应用服务器，提供精准安全控制"
+      },
+      "layered": {
+        "title": "分层保护",
+        "desc": "边缘+应用前置双重防护，实现纵深防御"
+      },
+      "serviceMesh": {
+        "title": "服务网格",
+        "desc": "无缝接入Istio/Linkerd，保护微服务通信"
+      }
+    }
+  },
+  "specifications": {
+    "sectionTitle": "产品规格参数",
+    "performance": {
+      "title": "性能指标",
+      "latency": "延迟影响：小于5ms/请求",
+      "requests": "请求处理：10,000+ HTTP请求/秒",
+      "connections": "并发连接：单节点支持100,000+",
+      "failover": "故障切换：自动切换时间<10秒"
+    },
+    "protocols": {
+      "title": "支持协议",
+      "http": "HTTP/1.x、HTTP/2、HTTP/3",
+      "websocket": "WebSocket",
+      "https": "HTTPS(SNI)",
+      "api": "REST/GraphQL/SOAP API"
+    },
+    "deployment": {
+      "title": "部署选项",
+      "container": "容器化：Docker、Kubernetes",
+      "virtualization": "虚拟化：VMware、KVM、Hyper-V",
+      "os": "操作系统：CentOS/RHEL 7+、Ubuntu 18.04+",
+      "cloud": "云平台：AWS、Azure、阿里云、腾讯云等"
+    },
+    "securityFeatures": {
+      "title": "安全功能",
+      "owasp": "OWASP Top 10防护",
+      "bot": "机器人行为分析",
+      "api": "API安全验证",
+      "patching": "虚拟补丁"
+    }
+  },
+  "environment": {
+    "sectionTitle": "环境支持",
+    "leadText": "RuiQi WAF 提供广泛的环境兼容性，支持多种操作系统、云平台、容器环境和通信协议，确保在各种IT基础设施中无缝部署。",
+    "os": {
+      "title": "操作系统",
+      "items": [
+        "CentOS/RHEL 7+",
+        "Ubuntu 18.04+",
+        "Debian 10+",
+        "Windows Server 2016+",
+        "麒麟操作系统(Kylinos)"
+      ]
+    },
+    "cloud": {
+      "title": "云平台",
+      "items": [
+        "AWS、Azure、GCP",
+        "阿里云、腾讯云",
+        "华为云、百度云",
+        "Sealos云、京东云"
+      ]
+    },
+    "container": {
+      "title": "容器支持",
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "OpenShift",
+        "Rancher"
+      ]
+    },
+    "protocols": {
+      "title": "支持协议",
+      "items": [
+        "HTTP/1.x、HTTP/2、HTTP/3",
+        "WebSocket",
+        "HTTPS(SNI)",
+        "gRPC"
+      ]
+    }
+  },
+  "scenarios": {
+    "sectionTitle": "行业应用场景",
+    "finance": {
+      "title": "金融行业",
+      "items": [
+        "网银与移动银行保护",
+        "金融交易系统防护",
+        "开放银行API安全"
+      ]
+    },
+    "government": {
+      "title": "政府与公共服务",
+      "items": [
+        "政务门户安全防护",
+        "公共服务平台保障",
+        "等保合规保障"
+      ]
+    },
+    "ecommerce": {
+      "title": "电子商务",
+      "items": [
+        "交易系统安全防护",
+        "账户安全保障",
+        "大促活动安全"
+      ]
+    },
+    "healthcare": {
+      "title": "医疗健康",
+      "items": [
+        "患者门户安全",
+        "医疗信息系统防护",
+        "远程医疗平台保护"
+      ]
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "website": "官方网站：",
+    "websiteValue": "github.com/HUAHUAI23/RuiQi",
+    "phone": "咨询热线：",
+    "phoneValue": "18679200828",
+    "support": "技术支持：",
+    "supportValue": "github.com/HUAHUAI23/RuiQi/issues"
+  }
+} 
