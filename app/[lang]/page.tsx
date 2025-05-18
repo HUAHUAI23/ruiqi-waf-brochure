@@ -34,7 +34,7 @@ export default async function BrochurePage({
   const { lang: paramLang } = await params
   const lang = isValidLocale(paramLang) ? paramLang : defaultLocale
   const dict = await getDictionary(lang)
-  
+
   // Helper function to get translations using dot notation
   const t = (path: string, fallback = '') => getTranslation(dict, path, fallback)
   // Helper function to get array translations
@@ -74,11 +74,11 @@ export default async function BrochurePage({
           </div>
 
           <div className="overview-image" style={{ maxHeight: "280px", marginBottom: "25px" }}>
-            <img 
-              src={lang === 'en' ? "/waf-en.png" : "/waf-zh.png"} 
-              alt="RuiQi WAF Architecture" 
-              className="waf-architecture-img" 
-              style={{ maxHeight: "280px", borderRadius: "12px" }} 
+            <img
+              src={lang === 'en' ? "/waf-en.png" : "/waf-zh.png"}
+              alt="RuiQi WAF Architecture"
+              className="waf-architecture-img"
+              style={{ maxHeight: "280px", borderRadius: "12px" }}
             />
           </div>
 
@@ -243,7 +243,7 @@ export default async function BrochurePage({
                 <div className="feature-highlight-content">
                   <h3 className="feature-highlight-title">{t('protection.features.owaspTop10.title')}</h3>
                   <p className="feature-highlight-desc">{t('protection.features.owaspTop10.desc')}</p>
-                  <div className="feature-highlight-tag">{t('protection.features.owaspTop10.tag')}</div>
+                  {lang === 'zh' && <div className="feature-highlight-tag">{t('protection.features.owaspTop10.tag')}</div>}
                 </div>
               </div>
 
